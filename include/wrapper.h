@@ -7,6 +7,7 @@ class FANN_Wrapper {
   FANN_Wrapper(FANN::neural_net*);
   int getNumberInputs();
   int getNumberOutputs();
+  int train(std::vector<float>,std::vector<float>);
   std::vector<float> run(std::vector<float>);
   FANN::neural_net* getNeuralNet();
  private:
