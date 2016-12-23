@@ -1,3 +1,6 @@
+#ifndef _FANN_WRAPPER_H
+#define _FANN_WRAPPER_H
+
 #include <vector>
 #include <fann.h>
 #include <fann_cpp.h>
@@ -13,3 +16,5 @@ class FANN_Wrapper {
  private:
   FANN::neural_net* net;
 };
+
+#endif
